@@ -1,0 +1,46 @@
+{
+  "expo": {
+    "name": "Fun English Academy",
+    "slug": "fun-english-academy",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/logo.png",
+    "scheme": "funeng",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FF7043"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.funacademy.english"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/logo.png",
+        "backgroundColor": "#FF7043"
+      },
+      "package": "com.funacademy.english"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/logo.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      [
+        "expo-av",
+        {
+          "microphonePermission": "Allow Fun English Academy to access your microphone for pronunciation practice."
+        }
+      ],
+      "expo-asset"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
